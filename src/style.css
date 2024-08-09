@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .p-panel {
+    @apply mt-4 flex flex-col border-t-8 border-gray-800 bg-gray-100 bg-[url('bg-card.png')] bg-left-top bg-repeat-x p-10 transition-all delay-150 duration-1000 ease-in-out md:absolute md:left-[30%] md:z-10 md:ml-3 md:mt-0 md:h-full md:w-[40%] md:overflow-auto;
+  }
+  .link-panel {
+    @apply relative z-10 block overflow-hidden text-ellipsis bg-violet-500 px-2 py-3 text-xs font-medium uppercase text-white transition-all duration-1000 ease-in-out before:absolute before:left-0 before:top-0 before:-z-10 before:block before:h-full before:w-0 before:bg-black before:transition-all before:duration-300 before:ease-in-out hover:pl-5 before:hover:w-full;
+  }
+  .link-panel.active-link {
+    @apply bg-black pl-5;
+  }
+  #p-menu.slide-menu {
+    @apply md:left-0;
+  }
+  #p-menu.disabled .link-panel {
+    @apply pointer-events-none cursor-not-allowed decoration-0 opacity-50;
+  }
+  #intro.slide-intro {
+    @apply md:left-[15%];
+  }
+  #work.slide-panel,
+  #educ.slide-panel,
+  #cert.slide-panel,
+  #skills.slide-panel {
+    @apply left-[55%] md:opacity-100;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7edf4;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #dcc3eb;
+    border-radius: 100vh;
+    border: 2px solid #f7edf4;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #dbbcec;
+  }
+}

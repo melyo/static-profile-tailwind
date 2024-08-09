@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armel Acuña - Full Stack Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- start: page >> loader -->
+    <div
+      id="p-loader"
+      class="fixed left-0 top-0 z-50 h-full w-full scale-100 bg-violet-700 transition-all duration-1000 ease-in-out"
+    >
+      <div class="flex h-full w-full flex-col items-center justify-center">
+        <div>
+          <span
+            class="m-[0,auto] inline-block h-[30px] w-[30px] animate-[loader_2s_infinite_ease] border-4 border-white text-center"
+            ><span
+              class="inline-block w-full animate-[loader-inner_2s_infinite_ease-in] bg-white align-top"
+            >
+            </span
+          ></span>
+        </div>
+        <div class="text-white"><strong>Armel Acuña</strong></div>
+        <div class="text-white">Full Stack Developer</div>
+      </div>
+    </div>
+    <!-- end: page >> loader -->
+    <!-- start: page >> containter -->
+    <div class="container mx-auto flex md:h-screen md:items-center">
+      <div
+        class="flex flex-1 flex-col p-7 md:relative md:h-[600px] md:px-7 md:py-0 lg:h-[570px]"
+      >
+        <!-- start: menu -->
+        <div
+          id="p-menu"
+          class="hidden w-[15%] pr-3 pt-2 md:absolute md:left-[15%] md:block md:transition-all md:delay-150 md:duration-1000 md:ease-in-out"
+        >
+          <ul class="space-y-1">
+            <li>
+              <a href="#intro" class="link-panel">About&nbsp;Me</a>
+            </li>
+            <li>
+              <a href="#work" class="link-panel">Work&nbsp;Experience</a>
+            </li>
+            <li>
+              <a href="#educ" class="link-panel">Education</a>
+            </li>
+            <li>
+              <a href="#cert" class="link-panel">Certifications</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end: menu -->
+        <!-- start: panel >> about me -->
+        <div
+          id="intro"
+          class="p-panel m-0 items-center text-center md:z-20 md:justify-evenly"
+        >
+          <div class="my-3 h-52 w-52">
+            <img
+              class="rounded-full border-8 border-gray-300"
+              src="profile.jpg"
+            />
+          </div>
+          <div class="text-4xl font-bold">
+            Hi, I'm <span class="text-violet-600">Armel Acuña!</span>
+          </div>
+          <div class="font-bold">Full Stack Developer</div>
+          <hr
+            class="my-2 h-1 w-full border-0 bg-[url('hr1.png')] bg-center bg-repeat-y"
+          />
+          <div class="text-sm">
+            I am inclined to join tech startups because I believe I can make a
+            meaningful impact.
+          </div>
+
+          <div
+            class="my-2 w-full rounded bg-violet-500 bg-[url('bg-btn.png')] bg-center bg-no-repeat p-2 text-sm text-white"
+          >
+            armel.acuna@gmail.com
+          </div>
+
+          <div class="flex content-center space-x-2 text-black">
+            <a target="_blank" href="https://github.com/melyo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="size-7"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z"
+                />
+              </svg>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/melyo/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="size-7"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                />
+              </svg>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/armel.acuna">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="size-7"
+              >
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- end: panel >> about me -->
+        <!-- start: panel >> work experience -->
+        <div id="work" class="p-panel scrollbar space-y-4 md:opacity-0">
+          <div
+            class="flex items-center space-x-1 border-l-4 border-violet-400 pl-3 text-violet-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.664 1.319a.75.75 0 0 1 .672 0 41.059 41.059 0 0 1 8.198 5.424.75.75 0 0 1-.254 1.285 31.372 31.372 0 0 0-7.86 3.83.75.75 0 0 1-.84 0 31.508 31.508 0 0 0-2.08-1.287V9.394c0-.244.116-.463.302-.592a35.504 35.504 0 0 1 3.305-2.033.75.75 0 0 0-.714-1.319 37 37 0 0 0-3.446 2.12A2.216 2.216 0 0 0 6 9.393v.38a31.293 31.293 0 0 0-4.28-1.746.75.75 0 0 1-.254-1.285 41.059 41.059 0 0 1 8.198-5.424ZM6 11.459a29.848 29.848 0 0 0-2.455-1.158 41.029 41.029 0 0 0-.39 3.114.75.75 0 0 0 .419.74c.528.256 1.046.53 1.554.82-.21.324-.455.63-.739.914a.75.75 0 1 0 1.06 1.06c.37-.369.69-.77.96-1.193a26.61 26.61 0 0 1 3.095 2.348.75.75 0 0 0 .992 0 26.547 26.547 0 0 1 5.93-3.95.75.75 0 0 0 .42-.739 41.053 41.053 0 0 0-.39-3.114 29.925 29.925 0 0 0-5.199 2.801 2.25 2.25 0 0 1-2.514 0c-.41-.275-.826-.541-1.25-.797a6.985 6.985 0 0 1-1.084 3.45 26.503 26.503 0 0 0-1.281-.78A5.487 5.487 0 0 0 6 12v-.54Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="text-xl font-bold">Work Experience</span>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">Full Stack Developer</div>
+            <div class="font-bold">Growsari Enterprise Inc.</div>
+            <div class="text-xs italic">
+              Quezon City, Metro Manila (September 2019 - Present)
+            </div>
+            <hr class="my-1 w-full border-gray-300" />
+            <ul class="ml-9 list-outside list-disc text-xs">
+              <li>
+                A member of the pioneering team of Manila-based developers who
+                migrated the monolith backend into distributed systems,
+                specifically, Serverless architecture, to resolve frequent
+                downtime issues and make it faster, responsive and more scalable
+              </li>
+              <li>
+                Commenced the redevelopment of the Growsari Store mobile
+                application using React Native, enabling cross-platform
+                compatibility
+              </li>
+              <li>
+                Configured the new system as a platform to simplify the
+                onboarding of additional merchants who wish to sell within the
+                established store network
+              </li>
+              <li>
+                Created a range of back-office tools and web interfaces to
+                streamline product catalog management, order monitoring,
+                marketing material administration, and etc.
+              </li>
+              <li>
+                Collaborated directly with merchants and partners interested in
+                integrating and synchronizing their mid- to last-mile systems
+                with our platform
+              </li>
+              <li>
+                Oversaw other developers, assisted in creating specifications as
+                guidelines for new features, and conducted code reviews
+              </li>
+              <li>
+                Technologies used: Javascript, Node.js, GraphQL (Apollo Server,
+                Apollo Client), React.js (Ant Design), React Native, Docker,
+                Serverless, AWS (EC2, S3, SES, DynamoDB, Lambda, API Gateway,
+                CloudFormation, Opensearch), ELK, GitLab CI
+              </li>
+            </ul>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">Backend Developer</div>
+            <div class="font-bold">Synergy88 Digital</div>
+            <div class="text-xs italic">
+              Quezon City, Metro Manila (February 2018 - August 2019)
+            </div>
+            <hr class="my-1 w-full border-gray-300" />
+            <ul class="ml-9 list-outside list-disc text-xs">
+              <li>
+                Part of the team that spearheaded the creation of an in-house
+                game backend platform, leveraging distributed infrastructure and
+                serverless architecture on AWS, which is used by several
+                hyper-casual games
+              </li>
+              <li>
+                Created dev tools as guide for implementing the game backend
+                services APIs and offered support to game developers in
+                integrating these APIs within the Unity SDK that will be used
+                for seamless integration across all games
+              </li>
+              <li>
+                Developed custom backend functions and events tailored to the
+                unique logic of each game
+              </li>
+              <li>
+                Developed web views for integration into the game, including
+                features such as reward redemption
+              </li>
+              <li>
+                Maintained the legacy game backend source code deployed on
+                GameSparks, a Backend as a Service (BaaS) platform
+              </li>
+              <li>
+                Technologies used: Javascript, Node.js, GraphQL (Apollo Server,
+                Apollo Client), Socket.IO, React.js (Ant Design), React Native,
+                Serverless, AWS (EC2, S3, SES, DynamoDB, Lambda, API Gateway,
+                CloudFormation, CloudSearch, ECS, Fargate, SQS, ElastiCache),
+                PHP, Laravel, GameSparks, MongoDB
+              </li>
+            </ul>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">Software Engineer</div>
+            <div class="font-bold">Pragmanila Solutions Inc.</div>
+            <div class="text-xs italic">
+              Quezon City, Metro Manila (March 2016 - January 2018)
+            </div>
+            <hr class="my-1 w-full border-gray-300" />
+            <ul class="ml-9 list-outside list-disc text-xs">
+              <li>
+                Rapid development and deployment of various minimum viable
+                products (MVPs) for clients across sectors such as law and legal
+                services, education, human resources, banking, and real estate
+              </li>
+              <li>
+                Deployed to clients' sites and on-premise infrastructure for
+                projects involving sensitive data, including banking services in
+                the Philippines and a real estate company in Singapore
+              </li>
+              <li>
+                Led the development of an in-house Software as a Service (SaaS)
+                solution for a timekeeping system known as Pragger
+              </li>
+              <li>
+                Technologies used: PHP, Laravel, Lumen, Javascript, Node.js,
+                Express.js, Loopback.js, IBM API Connect, Docker, Vagrant,
+                MySQL, SQL Server, HTML5, CSS3, Less, Sass, Scss, Gulp, Webpack,
+                JQuery, Vue.js, React.js, React Native, Redux, Gherkin, Behat
+              </li>
+            </ul>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">Control Systems Engineer</div>
+            <div class="font-bold">Exponent Controls and Electrical Corp.</div>
+            <div class="text-xs italic">
+              Cainta, Rizal (March 2015 - December 2015)
+            </div>
+            <hr class="my-1 w-full border-gray-300" />
+            <ul class="ml-9 list-outside list-disc text-xs">
+              <li>
+                Managed numerous factory and plant automation projects,
+                delivering detailed electrical schematic diagrams, control panel
+                fabrication, and assembly and installation plans using AutoCAD
+              </li>
+              <li>
+                Developed PLC programs in ladder logic for client's integrated
+                control system projects
+              </li>
+              <li>
+                Technologies used: AutoCAD, Omron (CX Programmer), Siemens (TIA
+                Portal)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end: panel >> work experience -->
+        <!-- start: panel >> education -->
+        <div id="educ" class="p-panel scrollbar space-y-4 md:opacity-0">
+          <div
+            class="flex items-center space-x-1 border-l-4 border-violet-400 pl-3 text-violet-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.664 1.319a.75.75 0 0 1 .672 0 41.059 41.059 0 0 1 8.198 5.424.75.75 0 0 1-.254 1.285 31.372 31.372 0 0 0-7.86 3.83.75.75 0 0 1-.84 0 31.508 31.508 0 0 0-2.08-1.287V9.394c0-.244.116-.463.302-.592a35.504 35.504 0 0 1 3.305-2.033.75.75 0 0 0-.714-1.319 37 37 0 0 0-3.446 2.12A2.216 2.216 0 0 0 6 9.393v.38a31.293 31.293 0 0 0-4.28-1.746.75.75 0 0 1-.254-1.285 41.059 41.059 0 0 1 8.198-5.424ZM6 11.459a29.848 29.848 0 0 0-2.455-1.158 41.029 41.029 0 0 0-.39 3.114.75.75 0 0 0 .419.74c.528.256 1.046.53 1.554.82-.21.324-.455.63-.739.914a.75.75 0 1 0 1.06 1.06c.37-.369.69-.77.96-1.193a26.61 26.61 0 0 1 3.095 2.348.75.75 0 0 0 .992 0 26.547 26.547 0 0 1 5.93-3.95.75.75 0 0 0 .42-.739 41.053 41.053 0 0 0-.39-3.114 29.925 29.925 0 0 0-5.199 2.801 2.25 2.25 0 0 1-2.514 0c-.41-.275-.826-.541-1.25-.797a6.985 6.985 0 0 1-1.084 3.45 26.503 26.503 0 0 0-1.281-.78A5.487 5.487 0 0 0 6 12v-.54Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="text-xl font-bold">Education</span>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">BS in Electronics Engineering</div>
+            <div class="font-bold">De La Salle Lipa - Lipa City, Batangas</div>
+            <hr class="my-1 w-full border-gray-300" />
+            <ul class="ml-9 list-outside list-disc text-xs">
+              <li>
+                Honors: Dean’s List for 4 consecutive semesters (2009 – 2011)
+              </li>
+              <li>
+                1 semester scholarship grant for attaining the highest GPA among
+                non-scholars (A.Y. 2010-2011)
+              </li>
+              <li>
+                Auditor of SG CITE Council (Student Government College of
+                Information Technology and Engineering Council A.Y. 2013 - 2014)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end: panel >> education -->
+        <!-- start: panel >> certifications -->
+        <div id="cert" class="p-panel scrollbar space-y-4 md:opacity-0">
+          <div
+            class="flex items-center space-x-1 border-l-4 border-violet-400 pl-3 text-violet-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.664 1.319a.75.75 0 0 1 .672 0 41.059 41.059 0 0 1 8.198 5.424.75.75 0 0 1-.254 1.285 31.372 31.372 0 0 0-7.86 3.83.75.75 0 0 1-.84 0 31.508 31.508 0 0 0-2.08-1.287V9.394c0-.244.116-.463.302-.592a35.504 35.504 0 0 1 3.305-2.033.75.75 0 0 0-.714-1.319 37 37 0 0 0-3.446 2.12A2.216 2.216 0 0 0 6 9.393v.38a31.293 31.293 0 0 0-4.28-1.746.75.75 0 0 1-.254-1.285 41.059 41.059 0 0 1 8.198-5.424ZM6 11.459a29.848 29.848 0 0 0-2.455-1.158 41.029 41.029 0 0 0-.39 3.114.75.75 0 0 0 .419.74c.528.256 1.046.53 1.554.82-.21.324-.455.63-.739.914a.75.75 0 1 0 1.06 1.06c.37-.369.69-.77.96-1.193a26.61 26.61 0 0 1 3.095 2.348.75.75 0 0 0 .992 0 26.547 26.547 0 0 1 5.93-3.95.75.75 0 0 0 .42-.739 41.053 41.053 0 0 0-.39-3.114 29.925 29.925 0 0 0-5.199 2.801 2.25 2.25 0 0 1-2.514 0c-.41-.275-.826-.541-1.25-.797a6.985 6.985 0 0 1-1.084 3.45 26.503 26.503 0 0 0-1.281-.78A5.487 5.487 0 0 0 6 12v-.54Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="text-xl font-bold">Certifications</span>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">Licensed Electronics Engineer</div>
+            <div class="font-bold">
+              Professional Regulation Commission (PRC)
+            </div>
+            <div class="text-xs italic">October 2014</div>
+          </div>
+          <div class="border-4 border-double border-gray-300 p-5">
+            <div class="font-bold">Licensed Electronics Technician</div>
+            <div class="font-bold">
+              Professional Regulation Commission (PRC)
+            </div>
+            <div class="text-xs italic">October 2014</div>
+          </div>
+          <div class="text-right">
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/1a35Ps2gw-A6ndI0nnXOnxF0g5RSNx-Cg7fKFK75GGOU/edit?usp=sharing"
+              class="rounded-lg bg-violet-500 px-4 py-2 text-sm uppercase text-white duration-300 hover:bg-violet-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="inline size-5"
+              >
+                <path
+                  d="M12 1.5a.75.75 0 0 1 .75.75V7.5h-1.5V2.25A.75.75 0 0 1 12 1.5ZM11.25 7.5v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V7.5h3.75a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h3.75Z"
+                />
+              </svg>
+              <span>Download My Resume</span>
+            </a>
+          </div>
+        </div>
+        <!-- end: panel >> certifications -->
+      </div>
+    </div>
+    <!-- end: page >> containter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.waves.min.js"></script>
+    <script>
+      const effect = VANTA.WAVES({
+        el: 'body',
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 400.0,
+        minWidth: 400.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        waveHeight: 10.0,
+        color: 0x696969,
+        waveSpeed: 0.9,
+      })
+      //horizon scrollbar fix... sort of.
+      window.onload = function () {
+        window.dispatchEvent(new Event('resize'))
+      }
+    </script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

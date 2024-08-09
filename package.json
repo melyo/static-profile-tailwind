@@ -1,0 +1,23 @@
+{
+  "name": "melyo.github.io",
+  "version": "2.0.0",
+  "description": "version 2 of my profile using vanilla javascript, html and tailwind css",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.40",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.7",
+    "vite": "^5.3.5"
+  }
+}
