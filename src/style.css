@@ -14,7 +14,7 @@
     @apply mt-4 flex flex-col border-t-8 border-gray-800 bg-gray-100 bg-[url('/bg-card.png')] bg-left-top bg-repeat-x p-5 transition-all delay-150 duration-1000 ease-in-out sm:p-10 md:absolute md:left-[30%] md:z-10 md:ml-3 md:mt-0 md:h-full md:w-[40%] md:overflow-auto;
   }
   .link-panel {
-    @apply relative z-10 block overflow-hidden text-ellipsis bg-violet-500 px-2 py-3 text-xs font-medium uppercase text-white transition-all duration-1000 ease-in-out before:absolute before:left-0 before:top-0 before:-z-10 before:block before:h-full before:w-0 before:bg-black before:transition-all before:duration-300 before:ease-in-out hover:pl-5 before:hover:w-full;
+    @apply relative z-10 block overflow-hidden text-ellipsis bg-sky-500 px-2 py-3 text-xs font-medium uppercase text-white transition-all duration-1000 ease-in-out before:absolute before:left-0 before:top-0 before:-z-10 before:block before:h-full before:w-0 before:bg-black before:transition-all before:duration-300 before:ease-in-out hover:pl-5 before:hover:w-full;
   }
   .link-panel.active-link {
     @apply bg-black pl-5;
@@ -43,14 +43,14 @@
   }
   .scrollbar::-webkit-scrollbar-track {
     border-radius: 100vh;
-    background: #f7edf4;
+    background: #e0f2fe;
   }
   .scrollbar::-webkit-scrollbar-thumb {
-    background: #dcc3eb;
+    background: #38bdf8;
     border-radius: 100vh;
-    border: 2px solid #f7edf4;
+    border: 2px solid #e0f2fe;
   }
   .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #dbbcec;
+    background: #0ea5e9;
   }
 }
