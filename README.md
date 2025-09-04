@@ -9,3 +9,17 @@ Key Features:
 - **Responsive and Accessible Design**: Designed the site to be fully responsive, providing an excellent user experience across all devices and screen sizes, while adhering to accessibility best practices.
 
 This updated profile and resume website combines modern web technologies to offer a sleek, efficient, and user-friendly platform for showcasing professional achievements and career highlights.
+
+## Getting Started
+
+First, install the project dependencies:
+
+```bash
+pnpm i
+```
+
+then run the development server:
+
+```bash
+pnpm run dev
+```
